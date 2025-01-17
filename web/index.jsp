@@ -1,8 +1,4 @@
-<%-- 
-    Document   : index
-    Created on : 07-Jan-2025, 22:24:08
-    Author     : JEYAPRAGASH
---%>
+
 <%--<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>--%>
 
@@ -207,7 +203,7 @@
             </nav>
         </header>
 
-        <!-- Hero Section -->
+      
 <section class="hero">
     <h1>Be a part of decision</h1>
     <div class="hero-buttons">
