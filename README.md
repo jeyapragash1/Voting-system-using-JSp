@@ -183,6 +183,7 @@ mysql -u root -p < database/quick_setup.sql
    ```java
    private static final String DB_USER = "root";
    private static final String DB_PASSWORD = "your_password";
+   private static final String DB_NAME = "sri_lanka_voting_system";
    ```
 
 4. **Add MySQL JDBC Driver**
@@ -197,12 +198,12 @@ mysql -u root -p < database/quick_setup.sql
 6. **Deploy to Tomcat**
    ```bash
    ant deploy
-   # or copy build/web/ to tomcat/webapps/Online-Voting-System/
+   # or copy build/web/ to tomcat/webapps/Sri-Lanka-Voting-System/
    ```
 
 7. **Start Tomcat and Access**
    ```
-   http://localhost:8080/Online-Voting-System/
+   http://localhost:8080/Sri-Lanka-Voting-System/
    ```
 
 ---
@@ -213,12 +214,12 @@ mysql -u root -p < database/quick_setup.sql
 
 1. **Register as a Voter**
    - Go to: `/UsrRe/register.jsp`
-   - Fill in voter information (NIC, Email, Password, etc.)
+   - Fill in voter information (Sri Lankan National ID, Email, Password, etc.)
    - Click Register
 
 2. **Login to Vote**
    - Go to: `/UsrRe/login.jsp`
-   - Enter NIC/Username and Password
+   - Enter Sri Lankan National ID/Username and Password
    - Click Login
 
 3. **Cast Your Vote**
@@ -265,29 +266,29 @@ mysql -u root -p < database/quick_setup.sql
 
 ### Sample Voters
 ```
-1. john_voter (john@example.com) - NIC: NIC001234567890 - Status: Eligible ✅
-2. sarah_voter (sarah@example.com) - NIC: NIC001234567891 - Status: Eligible ✅
-3. rahul_voter (rahul@example.com) - NIC: NIC001234567892 - Status: Eligible ✅
-4. maya_voter (maya@example.com) - NIC: NIC001234567893 - Status: Registered
-5. arjun_voter (arjun@example.com) - NIC: NIC001234567894 - Status: Eligible ✅
+1. anil_silva (anil.silva@example.com) - NIC: 195671234567V - Status: Eligible ✅
+2. priya_perera (priya.perera@example.com) - NIC: 199234567890V - Status: Eligible ✅
+3. roshan_jayasinghe (roshan.jayasinghe@example.com) - NIC: 198567890123V - Status: Eligible ✅
+4. nisha_fernando (nisha.fernando@example.com) - NIC: 200123456789V - Status: Registered
+5. dilshan_kumara (dilshan.kumara@example.com) - NIC: 199012345678V - Status: Eligible ✅
 ```
 
 ### Sample Elections
 ```
-1. General Election 2026 (950,000 voters) - Scheduled
-2. State Assembly Elections 2026 (500,000 voters) - Scheduled
-3. Local Municipal Elections (250,000 voters) - Scheduled
-4. Referendum on Constitutional Amendment (100,000 voters) - Scheduled
-5. Panchayat Elections 2026 (150,000 voters) - Scheduled
+1. Presidential Election 2026 (15,000,000 voters) - Scheduled
+2. Parliamentary Elections 2026 (14,000,000 voters) - Scheduled
+3. Provincial Council Elections - Western (2,500,000 voters) - Scheduled
+4. Local Government Elections 2026 (10,000,000 voters) - Scheduled
+5. Pradeshiya Sabha Elections - Central (1,500,000 voters) - Scheduled
 ```
 
-### Sample Candidates (General Election)
+### Sample Candidates (Presidential Election)
 ```
-1. Narendra Modi (BJP - Lotus) - 325,000 votes (34.21%)
-2. Rahul Gandhi (Congress - Hand) - 285,000 votes (30.00%)
-3. Arvind Kejriwal (AAP - Broom) - 195,000 votes (20.53%)
-4. Mamata Banerjee (TMC - Flower) - 95,000 votes (10.00%)
-5. Uddhav Thackeray (Shiv Sena - Bow) - 55,000 votes (5.79%)
+1. Anura Kumara Dissanayake (JVP - Lamp) - 4,560,000 votes (34.21%)
+2. Sajith Premadasa (SJB - Sword) - 3,990,000 votes (30.00%)
+3. Namal Rajapaksa (SLPP - Elephant) - 2,730,000 votes (20.53%)
+4. Harini Amarasuriya (ITAK - Hand) - 1,330,000 votes (10.00%)
+5. Tiran Alles (TNPF - Star) - 770,000 votes (5.79%)
 ```
 
 ---
@@ -388,8 +389,8 @@ DatabaseConnection.testConnection();
 
 ### Sample Login Credentials
 ```
-Username: john_voter
-NIC: NIC001234567890
+Username: anil_silva
+NIC: 195671234567V
 ```
 
 ### Test Queries
@@ -472,8 +473,9 @@ For issues, questions, or suggestions:
 
 ## 👨‍💻 Author
 
-**Jeyaprakash**
+**Sri Lanka Election Commission - Voting System**
 - GitHub: [@jeyapragash1](https://github.com/jeyapragash1)
+- Adapted for Sri Lankan Elections
 
 ---
 
